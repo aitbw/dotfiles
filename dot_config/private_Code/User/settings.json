@@ -1,0 +1,107 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.autoIndent": "full",
+    "editor.fontFamily": "'Monaco'",
+    "editor.fontLigatures": true,
+    "editor.fontWeight": 500,
+    "editor.letterSpacing": 1.5,
+    "editor.lineHeight": 45,
+    "editor.tabSize": 2,
+    "editor.tabCompletion": "on",
+    "editor.rulers": [
+        80
+    ],
+    "editor.scrollBeyondLastLine": false,
+    "editor.minimap.enabled": false,
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "editor.emptySelectionClipboard": false,
+    "editor.wordBasedSuggestions": false,
+    "editor.cursorBlinking": "phase",
+    "editor.guides.bracketPairs": true,
+    "editor.mouseWheelZoom": false,
+    "editor.cursorStyle": "line-thin",
+    "editor.folding": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "emmet.includeLanguages": {
+        "html": "html",
+        "erb": "html",
+        "javascript": "javascriptreact"
+    },
+    "explorer.openEditors.visible": 0,
+    "explorer.autoReveal": false,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false
+    },
+    // "ruby.lint": {
+    //     "rubocop": {
+    //         "useBundler": true
+    //     }
+    // },
+    // "ruby.format": "rubocop",
+    "[rust]": {
+        "editor.tabSize": 4
+    },
+    "[sql]": {
+        "editor.tabSize": 4
+    },
+    "search.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/.github": true,
+        "**/.vscode": true,
+        "**/.bundle": true,
+        "**/node_modules": true,
+        "**/tmp": true,
+        "**/log": true,
+        "**/dist": true,
+        "**/.keep": true,
+        "**/coverage": true,
+        "**/.mdlrc": true,
+        "**/.byebug_history": true,
+        "**/*.sublime-project": true,
+        "**/*.sublime-workspace": true
+    },
+    "terminal.external.linuxExec": "alacritty",
+    "terminal.integrated.fontFamily": "Fira Code",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.cursorBlinking": true,
+    "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.revealIfOpen": true,
+    "workbench.startupEditor": "none",
+    "gitlens.keymap": "chorded",
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.showFoldingControls": "always",
+    "editor.wordWrap": "on",
+    "ruby.useLanguageServer": true,
+    "ruby.intellisense": "rubyLocate",
+    "ruby.useBundler": true,
+    "files.associations": {
+        "*.deface": "erb"
+    },
+    "explorer.confirmDelete": false,
+    "files.autoSave": "afterDelay",
+    "breadcrumbs.filePath": "off",
+    "editor.fontSize": 14,
+    "vsicons.dontShowNewVersionMessage": true,
+    "workbench.editor.untitled.hint": "hidden",
+    "workbench.editor.focusRecentEditorAfterClose": false,
+    "editor.bracketPairColorization.enabled": true,
+    "telemetry.telemetryLevel": "off",
+    "workbench.colorTheme": "Shades of Purple",
+    "workbench.iconTheme": "vscode-icons",
+    "window.menuBarVisibility": "toggle",
+    "window.zoomLevel": 1
+}

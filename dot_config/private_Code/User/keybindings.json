@@ -1,0 +1,57 @@
+[
+  {
+    "key": "ctrl+a",
+    "command": "cursorHome",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "cursorEnd",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "cursorEnd",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+backspace",
+    "command": "deleteAllLeft",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+a",
+    "command": "editor.action.selectAll"
+  },
+  {
+    "key": "ctrl+shift+k",
+    "command": "editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+z",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+z",
+    "command": "workbench.action.terminal.focus",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+b down",
+    "command": "workbench.action.splitEditorDown"
+  },
+  {
+    "key": "ctrl+b left",
+    "command": "workbench.action.splitEditorLeft"
+  },
+  {
+    "key": "ctrl+b right",
+    "command": "workbench.action.splitEditorRight"
+  },
+  {
+    "key": "ctrl+b up",
+    "command": "workbench.action.splitEditorUp"
+  }
+]

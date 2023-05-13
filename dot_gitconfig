@@ -1,0 +1,86 @@
+[user]
+	name       = Angel Perez
+	email      = iAngel.p93@gmail.com
+	signingkey = D54DD3214BB1B133
+[core]
+	editor         = nano
+	excludesfile   = /home/aitbw/.gitignore_global
+	attributesfile = /home/aitbw/.gitattributes
+[commit]
+	template  = /home/aitbw/.git_commit_msg.txt           # Template for commit messages
+	gpgsign = true
+[alias]
+	commits   = log origin/master..HEAD --oneline --graph # List commits on current branch in human-friendly format
+	files     = diff-tree --no-commit-id --name-only -r   # List files included in a commit
+	unstage   = reset HEAD                                # Unstage files and/or folders
+	ignore    = update-index --assume-unchanged           # Ignore files and/or folders temporarily
+	unignore  = update-index --no-assume-unchanged        # Reverts alias above
+	soft      = reset --soft HEAD^                        # Soft resets latest commit
+	hard      = reset --hard                              # Hard resets current branch based on a commit's SHA
+	rmc       = rm --cached                               # Remove cached files and/or folders (does not actually removes the files/folders)
+	cam       = commit -am                                # Stage dirty files/folders and commits them
+	co        = checkout                                  # Reset dirty files/folders to its original state or moves to a different branch
+	cob       = checkout -b                               # Checkout to a new branch based on the current branch's state
+	rba       = rebase --abort                            # Abort an ongoing rebase
+	rbc       = rebase --continue                         # Continue an ongoing rebase
+	sp        = stash pop                                 # Pop a stash, deleting its reference
+	sl        = stash list                                # List of the saved stashes and its references
+	rom       = rebase origin/master                      # Rebase a branch based on the current state of the master branch
+	sit       = stash --include-untracked                 # Stash dirty files/folders, incl. untracked files
+	cane      = commit --amend --no-edit                  # Amend commit without editing its message
+	ca        = commit --amend                            # Amend commit and edit its message
+	reword    = commit -v --amend                         # Same as above, but more verbose
+	pf        = push -f                                   # Force push to the current branch
+	merged    = branch --merged master                    # List merged local branches
+	bd        = branch -D                                 # Delete branch
+	cm        = commit -m                                 # Commit current staged files
+	dc        = diff --cached                             # Diff for dirty and staged files
+	conflicts = diff --name-only --diff-filter=U          # List conflicting files during a merge/rebase
+	unpushed  = log --branches --not --remotes            # List unpushed-to-remote branches
+	ba        = branch -a                                 # Show local branches and all remotes
+	rename    = branch -m                                 # Rename branch
+	lps       = log --pretty=short                        # List of all commits done on current branch with minimal information
+	cp        = cherry-pick                               # Cherry picks a commit
+	cpc       = cherry-pick --continue                    # Continue an ongoing cherry-picking
+	cpa       = cherry-pick --abort                       # Abort an ongoing cherry-picking
+	bs        = bisect start                              # Start a bisection on current branch
+	bg        = bisect good                               # Mark currently bisected commit as good
+	bb        = bisect bad                                # Mark currently bisected commit as bad
+	br        = bisect reset                              # Reset currently bisected branch to its original state
+	ma        = merge --abort                             # Abort an ongoing merge
+	sdq       = stash drop --quiet                        # Remove a stash entry without output to the STDOUT
+	rup       = remote update --prune                     # Update all remotes from your repo, removing those that were deleted as well
+	prom      = pull origin master --rebase               # Pulls latest revision from master and rebases the current branch
+	psu       = push --set-upstream                       # Push to current branch with upstream tracking reference
+	rb        = rebase                                    # Base command for rebasing
+	rbi       = rebase -i                                 # Start an interactive rebase
+	rbs       = rebase --skip                             # Skip a patch (commit) when rebasing
+	cid       = clean -id                                 # Starts interactive cleaning
+	ap        = add -p                                    # Stage specific chunks of a diff
+	pr        = pull --rebase                             # Pull a remote branch with a rebase over the current branch
+	graph     = log --oneline --graph --decorate
+	modified  = diff --name-only master
+[color]
+	ui = true
+[push]
+	default = current # Push the current branch to a remote of the same name
+[rebase]
+  autoStash = true
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
+[color "diff"]
+  meta = yellow
+  frag = magenta bold
+  commit = yellow bold
+  old = red bold
+  new = green bold
+  whitespace = red reverse
+[pull]
+	rebase = false
+[hub]
+	protocol = ssh
+[init]
+	defaultBranch = master
