@@ -1,5 +1,5 @@
 # pacman/yay aliases
-function search --description 'Search a package on Manjaro repos or AUR'
+function search --description 'Search a package on EndeavourOS repos or AUR'
   switch $argv[1]
     case 1
       pacman -Ss $argv[2..-1]
@@ -8,7 +8,7 @@ function search --description 'Search a package on Manjaro repos or AUR'
   end
 end
 
-function install --description 'Install a package from Manjaro repos or AUR'
+function install --description 'Install a package from EndeavourOS repos or AUR'
   switch $argv[1]
     case 1
       sudo pacman -S $argv[2..-1]
@@ -26,8 +26,8 @@ function uninstall --description 'Uninstall a package along with its config and 
   end
 end
 
-function update --description 'Update Manjaro and AUR packages'
-  sudo pacman -Syu; yay --aur -Syu
+function update --description 'Update EndeavourOS and AUR packages'
+  sudo pacman -Syyyu; yay --aur -Syyyu
 end
 
 function orphans --description 'Remove orphan packages'
@@ -46,12 +46,12 @@ function clean --description 'Remove outdated/untracked packages'
 end
 
 function dbsync --description 'Updates Manjaro repos and syncs the DB'
-  sudo pacman -Syy
+  sudo pacman -Syyy
 end
 
-function mirrors --description 'Ranks Manjaro mirrors by speed, also filters the out-of-date ones'
-  sudo pacman-mirrors -f 0; sudo pacman -Syy
-end
+# function mirrors --description 'Ranks Manjaro mirrors by speed, also filters the out-of-date ones'
+  # sudo pacman-mirrors -f 0; sudo pacman -Syy
+# end
 
 # Shell aliases
 function pathdirs --description 'Shows every dir on current PATH, one per line'
