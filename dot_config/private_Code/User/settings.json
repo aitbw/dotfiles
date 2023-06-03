@@ -6,7 +6,7 @@
     "editor.fontFamily": "'Monaco'",
     "editor.fontLigatures": true,
     "editor.fontWeight": 500,
-    "editor.letterSpacing": 1.5,
+    "editor.letterSpacing": 2,
     "editor.lineHeight": 45,
     "editor.tabSize": 2,
     "editor.tabCompletion": "on",
@@ -102,6 +102,5 @@
     "telemetry.telemetryLevel": "off",
     "workbench.colorTheme": "Shades of Purple",
     "workbench.iconTheme": "vscode-icons",
-    "window.menuBarVisibility": "toggle",
-    "window.zoomLevel": 1
+    "window.menuBarVisibility": "toggle"
 }
