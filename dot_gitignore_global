@@ -10,3 +10,6 @@
 
 # Ignore Carbon folder
 carbon/
+
+# Ignore Ruby-LSP folders
+.ruby-lsp/
