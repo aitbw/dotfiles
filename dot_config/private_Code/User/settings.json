@@ -31,7 +31,7 @@
         "erb": "html",
         "javascript": "javascriptreact"
     },
-    "explorer.openEditors.visible": 0,
+    "explorer.openEditors.visible": 1,
     "explorer.autoReveal": false,
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
@@ -41,6 +41,10 @@
         "suppressLineUncommittedWarning": false,
         "suppressNoRepositoryWarning": false
     },
+    "cSpell.enabledLanguageIds": [
+        "markdown",
+        "plaintext"
+    ],
     // "ruby.lint": {
     //     "rubocop": {
     //         "useBundler": true
@@ -85,9 +89,7 @@
     "editor.acceptSuggestionOnEnter": "off",
     "editor.showFoldingControls": "always",
     "editor.wordWrap": "on",
-    "ruby.useLanguageServer": true,
-    "ruby.intellisense": "rubyLocate",
-    "ruby.useBundler": true,
+    "rubyLsp.rubyVersionManager": "asdf",
     "files.associations": {
         "*.deface": "erb"
     },
