@@ -1,0 +1,98 @@
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[colors.bright]
+black = "#666666"
+blue = "#7aa6da"
+cyan = "#70c0b1"
+green = "#b9ca4a"
+magenta = "#c397d8"
+red = "#d54e53"
+white = "#eaeaea"
+yellow = "#e7c547"
+
+[colors.cursor]
+cursor = "CellForeground"
+text = "CellBackground"
+
+[colors.dim]
+black = "#131415"
+blue = "#556a7d"
+cyan = "#5b7d78"
+green = "#777c44"
+magenta = "#75617b"
+red = "#864343"
+white = "#828482"
+yellow = "#9e824c"
+
+[colors.line_indicator]
+background = "None"
+foreground = "None"
+
+[colors.normal]
+black = "#1d1f21"
+blue = "#7cb7ff"
+cyan = "#00c1e4"
+green = "#71f79f"
+magenta = "#c74ded"
+red = "#ed254e"
+white = "#dcdfe4"
+yellow = "#f9dc5c"
+
+[colors.primary]
+background = "#161925"
+bright_foreground = "#828997"
+dim_foreground = "#5c6370"
+foreground = "#c3c7d1"
+
+[colors.search.focused_match]
+background = "CellForeground"
+foreground = "CellBackground"
+
+[colors.footer_bar]
+background = "#c5c8c6"
+foreground = "#1d1f21"
+
+[colors.search.matches]
+background = "#ffffff"
+foreground = "#000000"
+
+[colors.selection]
+background = "CellForeground"
+text = "CellBackground"
+
+[cursor.style]
+blinking = "On"
+shape = "Beam"
+
+[env]
+TERM = "alacritty"
+
+[font]
+size = 12.0
+
+[font.normal]
+family = "Inconsolata"
+style = "Regular"
+
+[font.offset]
+x = 1
+y = 2
+
+[scrolling]
+history = 10000
+
+[shell]
+args = ["--login"]
+program = "/usr/bin/fish"
+
+[window]
+decorations = "full"
+dynamic_padding = true
+dynamic_title = true
+decorations_theme_variant = "None"
+opacity = 1.0
+
+[window.dimensions]
+columns = 80
+lines = 28
