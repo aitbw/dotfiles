@@ -3,11 +3,10 @@
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "editor.autoIndent": "full",
-    "editor.fontFamily": "'Monaco'",
+    "editor.fontFamily": "'Fira Code', 'Monaco', 'Hack'",
     "editor.fontLigatures": true,
-    "editor.fontWeight": 500,
     "editor.letterSpacing": 2,
-    "editor.lineHeight": 45,
+    "editor.lineHeight": 50,
     "editor.tabSize": 2,
     "editor.tabCompletion": "on",
     "editor.rulers": [
@@ -18,7 +17,7 @@
     "editor.formatOnType": true,
     "editor.formatOnPaste": true,
     "editor.emptySelectionClipboard": false,
-    "editor.wordBasedSuggestions": false,
+    "editor.wordBasedSuggestions": "off",
     "editor.cursorBlinking": "phase",
     "editor.guides.bracketPairs": true,
     "editor.mouseWheelZoom": false,
@@ -89,20 +88,23 @@
     "editor.acceptSuggestionOnEnter": "off",
     "editor.showFoldingControls": "always",
     "editor.wordWrap": "on",
-    "rubyLsp.rubyVersionManager": "asdf",
+    "rubyLsp.rubyVersionManager": {
+        "identifier": "auto"
+    },
     "files.associations": {
         "*.deface": "erb"
     },
     "explorer.confirmDelete": false,
     "files.autoSave": "afterDelay",
     "breadcrumbs.filePath": "off",
-    "editor.fontSize": 14,
+    "editor.fontSize": 16,
     "vsicons.dontShowNewVersionMessage": true,
-    "workbench.editor.untitled.hint": "hidden",
     "workbench.editor.focusRecentEditorAfterClose": false,
     "editor.bracketPairColorization.enabled": true,
     "telemetry.telemetryLevel": "off",
-    "workbench.colorTheme": "Shades of Purple",
+    "workbench.colorTheme": "Shades of Purple (Super Dark)",
     "workbench.iconTheme": "vscode-icons",
-    "window.menuBarVisibility": "toggle"
+    "window.menuBarVisibility": "toggle",
+    "workbench.editor.empty.hint": "hidden",
+    "editor.largeFileOptimizations": true
 }
