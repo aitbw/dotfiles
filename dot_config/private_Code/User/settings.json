@@ -7,6 +7,7 @@
     "editor.fontLigatures": true,
     "editor.letterSpacing": 2,
     "editor.lineHeight": 50,
+    "editor.fontWeight": 500,
     "editor.tabSize": 2,
     "editor.tabCompletion": "on",
     "editor.rulers": [
@@ -77,8 +78,8 @@
         "**/*.sublime-workspace": true
     },
     "terminal.external.linuxExec": "alacritty",
-    "terminal.integrated.fontFamily": "Fira Code",
-    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontFamily": "Inconsolata",
+    "terminal.integrated.fontSize": 17,
     "terminal.integrated.cursorBlinking": true,
     "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
     "workbench.editor.enablePreview": false,
@@ -102,9 +103,13 @@
     "workbench.editor.focusRecentEditorAfterClose": false,
     "editor.bracketPairColorization.enabled": true,
     "telemetry.telemetryLevel": "off",
-    "workbench.colorTheme": "Shades of Purple (Super Dark)",
     "workbench.iconTheme": "vscode-icons",
     "window.menuBarVisibility": "toggle",
     "workbench.editor.empty.hint": "hidden",
-    "editor.largeFileOptimizations": true
+    "editor.largeFileOptimizations": true,
+    "workbench.colorTheme": "Shades of Purple (Super Dark)",
+    "cSpell.ignoreWords": [
+        "Liskov"
+    ],
+    "git.openRepositoryInParentFolders": "never"
 }
